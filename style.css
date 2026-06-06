@@ -1,36 +1,32 @@
-* {
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    background: #0b1020;
+    color: white;
 }
 
-body {
-    font-family: "Segoe UI", sans-serif;
-    background: radial-gradient(circle at top, #0f172a, #020617);
-    color: white;
+/* PARTICLES BACKGROUND */
+#particles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    padding: 120px 20px 60px;
+    padding: 100px 20px;
 }
 
 .hero h1 {
-    font-size: 50px;
-    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    font-size: 55px;
+    background: linear-gradient(90deg,#38bdf8,#a78bfa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.hero p {
-    opacity: 0.8;
-    margin-top: 10px;
-}
-
 .btn {
-    display: inline-block;
-    margin-top: 20px;
     padding: 12px 25px;
     background: #38bdf8;
     color: black;
@@ -39,16 +35,20 @@ body {
     font-weight: bold;
 }
 
-/* CARD */
+/* CARDS */
 .card {
     width: 85%;
-    max-width: 850px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 25px;
     background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.1);
     border-radius: 15px;
     backdrop-filter: blur(10px);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.02);
 }
 
 /* SKILLS */
@@ -58,12 +58,39 @@ body {
     padding: 8px 14px;
     background: rgba(56,189,248,0.2);
     border-radius: 20px;
-    font-size: 14px;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 30px;
-    opacity: 0.6;
+/* CHATBOT */
+#chatbox {
+    display: flex;
+    flex-direction: column;
+}
+
+#chatlog {
+    height: 120px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background: #38bdf8;
+    border: none;
+    cursor: pointer;
+}
+
+/* SCROLL ANIMATION */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
