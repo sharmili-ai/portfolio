@@ -5,20 +5,20 @@ body {
     color: white;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 90px 20px;
 }
 
 .hero h1 {
-    font-size: 45px;
+    font-size: 48px;
     margin-bottom: 10px;
 }
 
 .hero p {
-    opacity: 0.8;
     font-size: 18px;
+    opacity: 0.8;
 }
 
 .btn {
@@ -30,28 +30,44 @@ body {
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
-/* CARDS */
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* CARD STYLE */
 .card {
     background: rgba(255,255,255,0.08);
     margin: 20px auto;
     padding: 25px;
-    width: 80%;
+    width: 85%;
     max-width: 800px;
     border-radius: 15px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
     border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 /* SKILLS */
 .skills span {
     display: inline-block;
     margin: 5px;
-    padding: 8px 15px;
+    padding: 8px 14px;
     background: rgba(56,189,248,0.2);
     border-radius: 20px;
     font-size: 14px;
+}
+
+/* LINKS */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* FOOTER */
