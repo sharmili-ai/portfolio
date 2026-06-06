@@ -1,29 +1,13 @@
-// Scroll animations
-window.addEventListener("scroll", () => {
-    document.querySelectorAll(".reveal").forEach(el => {
-        const top = el.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
-            el.classList.add("active");
-        }
-    });
-});
+const text = "I build AI systems that solve real-world problems.";
+let i = 0;
 
-// Simple chatbot
-function reply() {
-    const input = document.getElementById("userInput");
-    const chatlog = document.getElementById("chatlog");
-
-    const msg = input.value;
-    if (!msg) return;
-
-    chatlog.innerHTML += "You: " + msg + "<br>";
-
-    let response = "I'm still learning AI concepts 🤖";
-
-    if (msg.toLowerCase().includes("ai")) {
-        response = "AI is my passion! I build intelligent systems.";
+function type() {
+    if (i < text.length) {
+        document.querySelector(".typing").textContent += text.charAt(i);
+        i++;
+        setTimeout(type, 50);
     }
-
-    chatlog.innerHTML += "Bot: " + response + "<br>";
-    input.value = "";
 }
+
+document.querySelector(".typing").textContent = "";
+type();
