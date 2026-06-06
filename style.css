@@ -8,96 +8,56 @@ body {
     font-family: "Segoe UI", sans-serif;
     background: radial-gradient(circle at top, #0f172a, #020617);
     color: white;
-    overflow-x: hidden;
-}
-
-/* GLOW EFFECT */
-.glow {
-    position: fixed;
-    top: -200px;
-    left: -200px;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(56,189,248,0.25), transparent);
-    filter: blur(80px);
-    z-index: -1;
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    padding: 120px 20px 70px;
-    animation: fadeDown 1s ease;
+    padding: 120px 20px 60px;
 }
 
 .hero h1 {
-    font-size: 52px;
+    font-size: 50px;
     background: linear-gradient(90deg, #38bdf8, #a78bfa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.hero h2 {
-    font-size: 22px;
-    margin-top: 10px;
-    color: #cbd5e1;
-}
-
 .hero p {
+    opacity: 0.8;
     margin-top: 10px;
-    opacity: 0.7;
 }
 
 .btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 12px 28px;
-    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    padding: 12px 25px;
+    background: #38bdf8;
     color: black;
-    font-weight: bold;
-    border-radius: 30px;
+    border-radius: 25px;
     text-decoration: none;
-    transition: 0.3s;
+    font-weight: bold;
 }
 
-.btn:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 25px rgba(56,189,248,0.5);
-}
-
-/* CARDS */
+/* CARD */
 .card {
     width: 85%;
-    max-width: 900px;
-    margin: 25px auto;
+    max-width: 850px;
+    margin: 20px auto;
     padding: 25px;
     background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 18px;
-    backdrop-filter: blur(14px);
-    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-    transition: 0.3s;
-    animation: fadeUp 1s ease;
-}
-
-.card:hover {
-    transform: translateY(-6px);
-}
-
-/* PROJECT */
-.project h3 {
-    margin-bottom: 10px;
-    color: #38bdf8;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
 }
 
 /* SKILLS */
 .skills span {
     display: inline-block;
-    margin: 6px;
+    margin: 5px;
     padding: 8px 14px;
+    background: rgba(56,189,248,0.2);
     border-radius: 20px;
-    background: rgba(56,189,248,0.15);
-    border: 1px solid rgba(56,189,248,0.3);
     font-size: 14px;
 }
 
@@ -106,15 +66,4 @@ footer {
     text-align: center;
     padding: 30px;
     opacity: 0.6;
-}
-
-/* ANIMATIONS */
-@keyframes fadeDown {
-    from { opacity: 0; transform: translateY(-30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
 }
