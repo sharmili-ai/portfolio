@@ -1,1 +1,1 @@
-console.log("AI Portfolio Loaded 🚀");
+console.log("Portfolio Loaded Successfully 🚀");
