@@ -5,25 +5,26 @@ body {
     color: white;
 }
 
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-}
-
+/* HERO */
 .hero {
     text-align: center;
     padding: 80px 20px;
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 45px;
+    margin-bottom: 10px;
 }
 
-.hero a {
+.hero p {
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.btn {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background: #38bdf8;
     color: black;
     border-radius: 25px;
@@ -31,28 +32,29 @@ body {
     font-weight: bold;
 }
 
-.glass {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
+/* CARDS */
+.card {
+    background: rgba(255,255,255,0.08);
+    margin: 20px auto;
     padding: 25px;
-    margin: 20px 0;
+    width: 80%;
+    max-width: 800px;
     border-radius: 15px;
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.1);
 }
 
-h2 {
-    color: #38bdf8;
-}
-
-.tags span {
+/* SKILLS */
+.skills span {
     display: inline-block;
     margin: 5px;
     padding: 8px 15px;
-    background: rgba(56, 189, 248, 0.2);
+    background: rgba(56,189,248,0.2);
     border-radius: 20px;
     font-size: 14px;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
